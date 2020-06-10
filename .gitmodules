@@ -1,3 +1,6 @@
 [submodule "dragandbot_common"]
 	path = dragandbot_common
 	url = https://github.com/dragandbot/dragandbot_common
+[submodule "pylon-ros-camera"]
+	path = pylon-ros-camera
+	url = https://github.com/awilby/pylon-ros-camera.git
