@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="respawn" default="false" />
+    <arg name="debug" default="false" />
+
+    <group ns="stereo">
+
+  	  <!-- Left camera node -->
+      <include file="$(find makobot_vision)/launch/pylon_camera.launch">
+        <arg name="node_name" value="basler1" />
+        <arg name="debug" value="$(arg debug)" />
+      </include>
+
+    	<!-- Right camera node -->
+      <include file="$(find makobot_vision)/launch/pylon_camera.launch">
+        <arg name="node_name" value="basler2" />
+        <arg name="debug" value="$(arg debug)" />
+      </include>
+
+    </group>
+
+</launch>
