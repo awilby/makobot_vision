@@ -31,7 +31,7 @@ image_encoding: "mono8"
 #  The desired publisher frame rate if listening to the topics.
 #  This parameter can only be set once at startup
 #  Calling the GrabImages-Action can result in a higher framerate
-frame_rate: 31.0
+frame_rate: 25.0
 
 #  Mode of camera's shutter.
 #  The supported modes are "rolling", "global" and "global_reset"
@@ -136,20 +136,20 @@ roi.height: 1544
 # Enable PTP software triggering
 ptp_enable: true
 
-# Allow Master
+# Allow camera to provide a master clock signal
 ptp_allow_master: true
 
 # Maximum allowed PTP offset (nanoseconds)
-#ptp_max_offset_ns: 0
+ptp_max_offset_ns: 100
 
 # PTP Offset Window (seconds)
-#ptp_offset_window_s: 0
+ptp_offset_window_s: 10
 
 # Synchronous Free Run
-sync_free_run: false
+sync_free_run: true
 
 # Synchronous Free Run (Start Low)
-#sync_free_run_start_low: 0
+sync_free_run_start_low: 1
 
 # Synchronous Free Run (Start High)
 #sync_free_run_start_high: 0
