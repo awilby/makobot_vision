@@ -143,7 +143,7 @@ ptp_allow_master: true
 ptp_max_offset_ns: 100
 
 # PTP Offset Window (seconds)
-ptp_offset_window_s: 10
+ptp_offset_window_s: 5
 
 # Synchronous Free Run
 sync_free_run: true
